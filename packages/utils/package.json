@@ -1,0 +1,7 @@
+{
+  "name": "@nextalk/utils",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "private": true
+  ,"scripts": {"build": "tsc -p tsconfig.json"}
+}

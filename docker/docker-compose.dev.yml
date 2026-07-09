@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    command: pnpm dev
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+
+  web:
+    build: ./apps/web
+    command: pnpm dev
+    volumes:
+      - ./apps/web:/app
+    ports:
+      - '5173:5173'

@@ -1,4 +1,31 @@
 # NexTalk
+
+NexTalk — starter monorepo for a production-ready messaging platform.
+
+This repository contains a monorepo scaffold (apps, backend, packages, docs) to start implementing a WhatsApp-scale application.
+
+Quick start
+
+1. Install dependencies (pnpm recommended):
+
+```bash
+pnpm install
+pnpm dev
+```
+
+2. See `docs/` for architecture, API, and roadmap.
+
+Repository layout
+
+ - `apps/` — frontend apps (web, mobile, admin)
+ - `backend/` — API, gateway, websocket, services
+ - `packages/` — shared libs (ui, sdk, types, utils, encryption)
+ - `database/` — DB migrations and schema
+ - `docs/` — design docs, API, deployment
+
+Next steps
+
+Run `pnpm install` then start the services you need. Consult `docs/ROADMAP.md` for the phased implementation plan.
 **NexTalk** is a modern, secure, real-time messaging platform designed for **Web, Android, and iOS**.
 # 💬 NexTalk
 
